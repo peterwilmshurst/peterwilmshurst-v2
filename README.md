@@ -9,9 +9,6 @@ yarn install
 yarn serve
 ```
 
-## Demo
-Demo website is over here: [vue-markdown-blog.netlify.com](https://vue-markdown-blog.netlify.com/)
-
 ## Project setup
 ```
 yarn install
