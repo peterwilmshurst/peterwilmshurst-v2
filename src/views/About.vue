@@ -314,10 +314,14 @@
   margin: 4rem auto;
   font-size: 4rem;
 }
-img {
+h1 {
+  img {
   display: block;
   margin: 0 auto;
   width: 150px;
+  z-index: 10;
+  position: relative;
+  }
 }
   .about {
       max-width: 60vw;

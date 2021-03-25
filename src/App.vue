@@ -20,13 +20,16 @@
 }
 .navbar {
   position: sticky;
-  top: 1rem;
+  top: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  background-color: #fff;
   &--link {
     display: flex;
     margin-left: 0.75rem;
+    padding: 1rem 0;
+    color: #39b54a;
   }
 }
 </style>

@@ -5,7 +5,6 @@
     </h1>
     <div class="sections">
       <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <!-- <h2 class="center">{{section}}</h2> -->
         <div class="section" v-for="entry in entries[section]" :key="entry.id">
           <div class="entry">
             <h3 @click="$router.push({name: entry.id})">
@@ -41,10 +40,14 @@ export default {
   margin: 4rem auto;
   font-size: 4rem;
 }
-img {
+h1 {
+  img {
   display: block;
   margin: 0 auto;
   width: 150px;
+  z-index: 10;
+  position: relative;
+  }
 }
 
 h2 {

@@ -1,13 +1,27 @@
 <template>
   <div class="blog">
+     <h1 class="headline center">
+      <img alt="Wilmshurst_" src="../assets/logo.svg">
+    </h1>
     <router-view />
     <router-link to="/" tag="a" class="back">&laquo; Back</router-link>
   </div>
 </template>
 <style lang="scss" scoped>
 .blog {
-  max-width: 50vw;
-  margin: 10rem auto;
+  max-width: 60vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+
+  h1 {
+  img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  z-index: 10;
+  position: relative;
+  }
+}
 
   .back {
     background-color: #39b54a;
