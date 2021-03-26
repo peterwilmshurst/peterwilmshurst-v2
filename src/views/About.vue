@@ -1,9 +1,5 @@
 <template>
-  <div class="about">
-    
-     <h1 class="headline center">
-      <img alt="Wilmshurst_" src="../assets/logo.svg">
-    </h1>
+  <div class="about wrap">
     <h2 class="center">Peter Wilmshurst</h2>
               <p>
                 I am a senior frontend developer with 12+ years of commercial
@@ -306,28 +302,7 @@
 
 <style lang="scss" scoped>
 
-.center {
-  text-align: center;
-}
-.headline {
-  text-transform: uppercase;
-  margin: 4rem auto;
-  font-size: 4rem;
-}
-h1 {
-  img {
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-  z-index: 10;
-  position: relative;
-  }
-}
   .about {
-      max-width: 60vw;
-      margin: 0 auto;
-      margin-top: 4rem;
-
     h2 {
       color: #39b54a;
       font-weight: 900;
@@ -344,14 +319,20 @@ h1 {
     }
 
     .skills {
+      display: flex;
+      flex-wrap: wrap;
+
       div {
-        display: inline-block;
+        flex-grow: 1;
         margin-right: 1rem;
+        align-self: flex-end;
       }
 
       img,
       svg {
-        max-height: 4rem;
+        height: auto;
+        max-width: 100%;
+        max-height: 3rem;
       }
 
       p {
@@ -376,7 +357,30 @@ h1 {
     }
   }
 
-  .dark {
+  .logo {
+    .cls-1 {
+        fill: #38344d;
+    }
+
+    .cls-2 {
+        fill: #281f30;
+    }
+
+    .cls-3 {
+        fill: #fff;
+    }
+
+    &:hover {
+        cursor: pointer;
+
+        .cls-1, .cls-2 {
+            fill: #39b54a;
+        }
+    }
+}
+
+// dark mode
+.dark {
     background-color: #2A263D;
 
     .about {
@@ -407,31 +411,6 @@ h1 {
         }
       }
     }
-  }
-
-  .logo {
-    .cls-1 {
-        fill: #38344d;
-    }
-
-    .cls-2 {
-        fill: #281f30;
-    }
-
-    .cls-3 {
-        fill: #fff;
-    }
-
-    &:hover {
-        cursor: pointer;
-
-        .cls-1, .cls-2 {
-            fill: #39b54a;
-        }
-    }
-}
-
-.dark {
     .logo {
         .cls-1 {
             fill: #fff;
@@ -453,6 +432,5 @@ h1 {
             }
         }
     }
-}
-
+  }
 </style>

@@ -1,21 +1,14 @@
 <template>
-  <div class="home">
-    <h1 class="headline center">
-      <img alt="Wilmshurst_" src="../assets/logo.svg">
-    </h1>
-    <div class="sections">
-      <div v-for="(section, index) in Object.keys(entries)" :key="index" class="group">
-        <div class="section" v-for="entry in entries[section]" :key="entry.id">
-          <div class="entry">
-            <h3 @click="$router.push({name: entry.id})">
+  <div class="home wrap">
+      <div v-for="(section, index) in Object.keys(entries)" :key="index" class="blog">
+        <div class="blog--post" v-for="entry in entries[section]" :key="entry.id">
+            <h2 @click="$router.push({name: entry.id})">
               {{entry.title}}
               <span class="subtitle">{{entry.date}}</span>
-            </h3>
+            </h2>
             <p>{{entry.description}}</p>
           </div>
-        </div>
       </div>
-    </div>
   </div>
 </template>
 
@@ -31,62 +24,32 @@ export default {
   }
 }
 </script>
+
 <style lang="scss" scoped>
-.center {
-  text-align: center;
-}
-.headline {
-  text-transform: uppercase;
-  margin: 4rem auto;
-  font-size: 4rem;
-}
-h1 {
-  img {
-  display: block;
-  margin: 0 auto;
-  width: 150px;
-  z-index: 10;
-  position: relative;
-  }
-}
-
 h2 {
-  color: #2A263D;
-  text-transform: capitalize;
-  margin-bottom: 2rem;
-}
-
-h3 {
   color: #39b54a;
   margin-bottom: 0;
   cursor: pointer;
+
   &:hover {
     text-decoration: underline;
   }
+
   .subtitle {
     color: #38344d;
-    font-size: .98rem;
+    font-size: 1rem;
     float: right;
     font-weight: normal;
   }
 }
 
 p {
-  margin-top: .4rem;
+  margin-top: .5rem;
 }
 
-.sections {
-  max-width: 60vw;
-  margin: 0 auto;
-  margin-top: 4rem;
+.blog {
+  &--post {
+    margin-bottom: 3rem;
+  }
 }
-
-.section {
-  margin-bottom: 3rem;
-}
-
-.group {
-  margin-bottom: 4rem;
-}
-
 </style>
