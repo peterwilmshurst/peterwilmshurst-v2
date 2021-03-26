@@ -108,7 +108,6 @@
                   </svg>
                   <p>Apple</p>
                 </div>
-
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 418.98 349.15" class="logo">
                     <g>
@@ -118,7 +117,6 @@
                   </svg>
                   <p>Adobe</p>
                 </div>
-
                 <div>
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 358.1 349.15" class="logo">
                     <g>
@@ -129,75 +127,73 @@
                   <p>Github</p>
                 </div>
               </div>
-
-
               <h2>Projects</h2>
               <p>I have experience with a wide range of stacks and enjoy working on projects that have a strong UI/UX
-                component. Below are just some of my software projects that I'm most proud of.</p>
+                component. Below are some of the projects that I'm most proud of.</p>
+              
+             <div class="cards">
 
+               <div class="card">
+                 <div class="content">
+                   <h3>Oxted Classic Cars</h3>
+                   <p>Oxted Classics is a family run classic car hire business run by father and son, Alec and Jack
+                     Meadows.</p>
+                   <p><a href="https://www.oxtedclassiccars.co.uk"
+                       target="_blank">https://www.oxtedclassiccars.co.uk</a></p>
+                 </div>
+               </div>
 
-              <div class="columns">
-                <div class="column">
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="content">
-                        <h3>Oxted Classic Cars</h3>
-                        <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi
-                          porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes,
-                          nascetur ridiculus mus.</p>
-                        <p><a href="https://www.oxtedclassiccars.co.uk" target="_blank">URL</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="column">
-                  <div class="card">
-                    <div class="card-content">
-                      <div class="content">
-                        <h3>The Dinner Table</h3>
-                        <p>Lorem ipsum leo risus, porta ac consectetur ac, vestibulum at eros. Donec id elit non mi
-                          porta gravida at eget metus. Cum sociis natoque penatibus et magnis dis parturient montes,
-                          nascetur ridiculus mus.</p>
-                        <p><a href="https://www.thedinnertable.co.uk" target="_blank">URL</a></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+               <div class="card">
+                 <div class="content">
+                   <h3>The Dinner Table</h3>
+                   <p>The Dinner Table began at that very place. Eating and surrounded by family. We thought we’d extend
+                     the table a bit and invite you all along.</p>
+                   <p><a href="https://www.thedinnertable.co.uk" target="_blank">https://www.thedinnertable.co.uk</a>
+                   </p>
+                 </div>
+               </div>
 
+             </div>
+           
               <h2>Experience</h2>
-              <p>Below is a visual representation of technologies/systems I have touched during my journey so far. Some
-                I have more experience of than others. I do not claim to be an expert on any of these!</p>
+              <p>Below are some of the technologies that I have touched during my development journey so far. Some of which I have used extensively whilst others not so much!</p>
 
               <div class="experience">
-
                 <div>
-                  <img src="../assets/skills_grunt.svg" alt="Grunt" />
-                  <p>Grunt</p>
+                  <img src="../assets/skills_shopify.svg" alt="Shopify" />
+                  <p>Shopify</p>
                 </div>
                 <div>
-                  <img src="../assets/skills_less.svg" alt="Less" />
-                  <p>LESS</p>
-                </div>
-                <div>
-                  <img src="../assets/skills_react.svg" alt="React" />
-                  <p>React</p>
-                </div>
-                <div>
-                  <img src="../assets/skills_markdown.svg" alt="Markdown" />
-                  <p>Markdown</p>
-                </div>
-                <div>
-                  <img src="../assets/skills_windows.svg" alt="Microsoft" />
-                  <p>Microsoft</p>
+                  <img src="../assets/skills_magento.svg" alt="Magento" />
+                  <p>Magento</p>
                 </div>
                 <div>
                   <img src="../assets/skills_wordpress.svg" alt="Wordpress" />
                   <p>Wordpress</p>
                 </div>
                 <div>
-                  <img src="../assets/skills_magento.svg" alt="Magento" />
-                  <p>Magento</p>
+                  <img src="../assets/skills_vue.svg" alt="Vue" />
+                  <p>Vue</p>
+                </div>
+                <div>
+                  <img src="../assets/skills_grunt.svg" alt="Grunt" />
+                  <p>Grunt</p>
+                </div>
+                  <div>
+                  <img src="../assets/skills_bulma.svg" alt="Bulma" />
+                  <p>Bulma</p>
+                </div>
+                <div>
+                  <img src="../assets/skills_less.svg" alt="Less" />
+                  <p>LESS</p>
+                </div>
+                <div>
+                  <img src="../assets/skills_markdown.svg" alt="Markdown" />
+                  <p>Markdown</p>
+                </div>
+                <div>
+                  <img src="../assets/skills_scrum.png" alt="Certified Scrum Master" />
+                  <p>CSM</p>
                 </div>
                 <div>
                   <img src="../assets/skills_atlassian.svg" alt="Atlassian" />
@@ -206,10 +202,6 @@
                 <div>
                   <img src="../assets/skills_mailchimp.svg" alt="Mailchimp" />
                   <p>Mailchimp</p>
-                </div>
-                <div>
-                  <img src="../assets/skills_scrum.png" alt="Certified Scrum Master" />
-                  <p>CSM</p>
                 </div>
               </div>
 
@@ -311,10 +303,36 @@
 
     h3 {
       font-size: 1rem;
-      font-weight: 400;
+      font-weight: 600;
 
       span {
         font-weight: 900;
+      }
+    }
+
+    a {
+      color: #39b54a;
+      font-style: italic;
+    }
+
+    .cards {
+      display: flex;
+      flex-flow: wrap;
+
+
+      .card {
+        flex: 1;
+        padding: 1.25rem;
+
+        border: 1px solid #39b54a;
+
+        &:first-child {
+          margin-right: 1rem;
+        }
+
+        &:last-child {
+          margin-left: 1rem;
+        }
       }
     }
 
@@ -341,12 +359,20 @@
     }
 
     .experience {
+      display: flex;
+      flex-wrap: wrap;
+
       div {
-        display: inline-block;
+        flex-grow: 1;
         margin-right: 1rem;
+        align-self: flex-end;
+        text-align: center;
       }
 
-      img {
+      img,
+      svg {
+        height: auto;
+        max-width: 100%;
         max-height: 2rem;
       }
 
@@ -359,28 +385,29 @@
 
   .logo {
     .cls-1 {
-        fill: #38344d;
+      fill: #38344d;
     }
 
     .cls-2 {
-        fill: #281f30;
+      fill: #281f30;
     }
 
     .cls-3 {
-        fill: #fff;
+      fill: #fff;
     }
 
     &:hover {
-        cursor: pointer;
+      cursor: pointer;
 
-        .cls-1, .cls-2 {
-            fill: #39b54a;
-        }
+      .cls-1,
+      .cls-2 {
+        fill: #39b54a;
+      }
     }
-}
+  }
 
-// dark mode
-.dark {
+  // dark mode
+  .dark {
     background-color: #2A263D;
 
     .about {
@@ -411,26 +438,28 @@
         }
       }
     }
+
     .logo {
-        .cls-1 {
-            fill: #fff;
-        }
+      .cls-1 {
+        fill: #fff;
+      }
 
+      .cls-2 {
+        fill: #cecece;
+      }
+
+      .cls-3 {
+        fill: #38344d;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        .cls-1,
         .cls-2 {
-            fill: #cecece;
+          fill: #39b54a;
         }
-
-        .cls-3 {
-            fill: #38344d;
-        }
-
-        &:hover {
-            cursor: pointer;
-
-            .cls-1, .cls-2 {
-                fill: #39b54a;
-            }
-        }
+      }
     }
   }
 </style>
