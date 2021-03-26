@@ -319,20 +319,9 @@
       display: flex;
       flex-flow: wrap;
 
-
       .card {
         flex: 1;
-        padding: 1.25rem;
-
-        border: 1px solid #39b54a;
-
-        &:first-child {
-          margin-right: 1rem;
-        }
-
-        &:last-child {
-          margin-left: 1rem;
-        }
+        padding: 1rem;
       }
     }
 
