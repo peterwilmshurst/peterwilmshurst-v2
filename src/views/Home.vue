@@ -26,8 +26,16 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+// variables
+$white: #FFFFFF;
+$black: #2A263D;
+$green: #39b54a;
+$grey: #38344d;
+
+
 h2 {
-  color: #39b54a;
+  color: $green;
   margin-bottom: 0;
   cursor: pointer;
 
@@ -36,12 +44,19 @@ h2 {
   }
 
   .subtitle {
-    color: #38344d;
+    color: $grey;
     font-size: 1rem;
     float: right;
     font-weight: normal;
   }
 }
+  .dark {
+    h2 {
+    .subtitle {
+      color: $white;
+    }
+  }
+  }
 
 p {
   margin-top: .5rem;

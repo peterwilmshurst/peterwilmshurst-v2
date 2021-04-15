@@ -3,7 +3,7 @@
       <main>
             <article>
                 <div class="img">
-                    <img src="https://images.unsplash.com/photo-1532289608746-8aaaa40620f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=80" alt="Mobile phone near a laptop" />
+                    <img src="../assets/portfolio_the-dinner-table.jpg" alt="The Dinner Table" />
                 </div>
                 <div class="content">
                   <div class="content--text">

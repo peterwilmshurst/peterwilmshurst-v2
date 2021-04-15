@@ -10,7 +10,7 @@ new Vue({
 }).$mount('#app')
 
 // dark mode
-let toggler = document.querySelector(".yes");
+let toggler = document.querySelector(".colour-theme");
 let fullscreen = document.querySelector("#app");
 
 toggler.addEventListener('click', () => {
