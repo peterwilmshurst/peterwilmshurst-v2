@@ -6,10 +6,16 @@
 </template>
 
 <style lang="scss" scoped>
+
+$white: #FFFFFF;
+$black: #2A263D;
+$green: #39b54a;
+$grey: #38344d;
+
 .blog {
   .back {
     background-color: transparent;
-    color: #39b54a;
+    color: $green;
     margin-top: 2rem;
     text-decoration: none;
     padding: 10px 15px;
@@ -17,12 +23,12 @@
     display: inline-block;
     transition: all .3s ease;
     &:hover {
-      background-color: #39b54a;
+      background-color: $green;
       color: #fff;
     }
   }
   h2 {
-      color: #39b54a;
+      color: $green;
       font-weight: 900;
       font-size: 2rem;
     }

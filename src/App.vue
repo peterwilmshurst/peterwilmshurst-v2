@@ -56,6 +56,10 @@ html, body {
   padding: 0px;
   height: 100%;
 }
+a {
+  color:#39b54a;
+}
+
 </style>
 
 <style lang="scss" scoped>
@@ -112,6 +116,7 @@ $grey: #38344d;
   align-items: center;
   background-color: $white;
   padding: 1rem;
+  height: 36px;
 
   &--right { 
     display: flex;
@@ -166,6 +171,7 @@ h1 {
 	color: $white;
 	transition: transform 250ms;
 	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.25);
+  z-index: 100;
 
 	&:hover {
 		transform: translateX(180px);
