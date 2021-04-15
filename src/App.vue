@@ -3,16 +3,24 @@
   <div id="app">
      <nav class="navbar">
 
+       <div class="navbar--left">
+
         <a href="#" class="navbar--link colour-theme">
           <svg id="dark_mode" data-name="dark mode" class="dark-mode" viewBox="0 0 240 240"><path class="cls-1" d="M106.74,56.76a61.53,61.53,0,0,1,6.48-1,62.63,62.63,0,0,1,6.53-.29,2.19,2.19,0,0,1,2.17,2.21,2.21,2.21,0,0,1-1.42,2,41,41,0,0,0-25,46.3v.07a40.95,40.95,0,0,0,48.3,31.83h.07A41,41,0,0,0,175.46,107a2.19,2.19,0,0,1,4.29.14,61.43,61.43,0,1,1-75.16-49.88l1.06-.25h0l1.08-.23Z"/></svg>
           <svg id="light_mode" data-name="light mode" class="light-mode" viewBox="0 0 240 240"><path class="cls-1" d="M120,51.17A68.83,68.83,0,1,1,71.33,71.33,68.6,68.6,0,0,1,120,51.17Zm38.27,30.56A54.13,54.13,0,1,0,174.12,120a54,54,0,0,0-15.85-38.27Z"/></svg>
         </a>
 
-        <router-link to="/"><a href="#" class="navbar--link active">Blog</a></router-link>
-        <router-link to="/about"><a href="#" class="navbar--link">About</a></router-link> 
-        <router-link to="/portfolio"><a href="#" class="navbar--link">Portfolio</a></router-link>
+       </div>
 
-        <a href="./docs/peter-wilmshurst.pdf" target="_blank" title="Peter Wilmshurst CV" class="navbar--link">CV</a>
+        <div class="navbar--right">
+
+          <router-link to="/"><a href="#" class="navbar--link active">Blog</a></router-link>
+          <router-link to="/about"><a href="#" class="navbar--link">About</a></router-link> 
+          <router-link to="/portfolio"><a href="#" class="navbar--link">Portfolio</a></router-link>
+
+          <a href="./docs/peter-wilmshurst.pdf" target="_blank" title="Peter Wilmshurst CV" class="navbar--link">CV</a>
+          
+        </div>
 
     </nav>
 
@@ -100,16 +108,22 @@ $grey: #38344d;
   position: sticky;
   top: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background-color: $white;
   padding: 1rem;
+
+  &--right { 
+    display: flex;
+    }
+
   &--link {
     display: flex;
     margin-left: 0.75rem;
     color: $green;
   }
 }
+
 .center {
   text-align: center;
 }
