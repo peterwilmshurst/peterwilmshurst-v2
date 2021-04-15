@@ -127,7 +127,9 @@
                   <p>Github</p>
                 </div>
               </div>
-              <h2>Projects</h2>
+             
+             
+              <!-- <h2>Projects</h2>
               <p>I have experience with a wide range of stacks and enjoy working on projects that have a strong UI/UX
                 component. Below are some of the projects that I'm most proud of.</p>
               
@@ -203,7 +205,7 @@
                   <img src="../assets/skills_mailchimp.svg" alt="Mailchimp" />
                   <p>Mailchimp</p>
                 </div>
-              </div>
+              </div> -->
 
               <h2>Employment</h2>
 
