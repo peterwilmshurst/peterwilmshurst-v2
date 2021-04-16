@@ -1,6 +1,12 @@
 {
   "blog": [
     {
+      "id": "wilma-v2",
+      "date": "April 01, 2021",
+      "title": "Check out the Vue",
+      "description": "I've given my website a bit of a revamp. Not only have I finally added some content (more to come!) I've rebuilt it from the ground up using Vue, added a dark mode and markdown blog posts."
+    },
+    {
       "id": "little-seeds",
       "date": "September 06, 2020",
       "title": "Little Seeds",
@@ -22,7 +28,7 @@
       "id": "core-principles-for-theming-in-magento-2",
       "date": "June 09, 2020",
       "title": "Core Principles for theming in Magento 2",
-      "description": "Set myself up a new development machine, yup! Gave me an opportunity to look deeper into a few of my peers' setups, dotfiles and so forth. I decided on using the git bare repository method, thanks for the advice DistroTube."
+      "description": "Completed the Core Principles for Theming in Magento 2 course."
     },
     {
       "id": "new-laptop",
