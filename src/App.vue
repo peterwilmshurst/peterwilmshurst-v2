@@ -11,31 +11,30 @@
           </router-link>
         </h1>
     
-      <nav>
-        <a href="#" id="hamburger">
-          <div class="nav-icon">
-            <span></span>
-          </div>
-        </a>
+<button class="theme">
+   <span class="darkIcon">
+      dark
+    </span>
+    <span class="lightIcon">
+      light
+    </span>
+</button>
 
-        <ul id="menu" class="main-menu">
-          
-          <li><router-link to="/about"><a href="#" class="navbar--link">About</a></router-link></li>
-          <li><router-link to="/portfolio"><a href="#" class="navbar--link">Portfolio</a></router-link></li>
-          <li><router-link to="/"><a href="#" class="navbar--link">Blog</a></router-link></li> 
-          <li><a href="./docs/peter-wilmshurst.pdf" target="_blank" title="Peter Wilmshurst CV" class="navbar--link external-link">CV</a></li>
+<button class="ham">
+    <span class="menuIcon">
+      menu
+    </span>
+    <span class="xIcon">
+      close
+    </span>
+  </button>
 
-          <!-- <li><router-link to="/life"><a href="#" class="navbar--link">Life</a></router-link></li>  -->
-          
-          <li class="colour-theme"> 
-            <a class="navbar--link">
-              <svg id="dark_mode" data-name="dark mode" class="dark-mode" viewBox="0 0 240 240"><path class="cls-1" d="M106.74,56.76a61.53,61.53,0,0,1,6.48-1,62.63,62.63,0,0,1,6.53-.29,2.19,2.19,0,0,1,2.17,2.21,2.21,2.21,0,0,1-1.42,2,41,41,0,0,0-25,46.3v.07a40.95,40.95,0,0,0,48.3,31.83h.07A41,41,0,0,0,175.46,107a2.19,2.19,0,0,1,4.29.14,61.43,61.43,0,1,1-75.16-49.88l1.06-.25h0l1.08-.23Z"/></svg>
-              <svg id="light_mode" data-name="light mode" class="light-mode" viewBox="0 0 240 240"><path class="cls-1" d="M120,51.17A68.83,68.83,0,1,1,71.33,71.33,68.6,68.6,0,0,1,120,51.17Zm38.27,30.56A54.13,54.13,0,1,0,174.12,120a54,54,0,0,0-15.85-38.27Z"/></svg>
-            </a>
-          </li>
-
-        </ul>
-      </nav>
+  <ul class="menu">
+    <li><router-link to="/about"><a href="#" class="menu--link">About</a></router-link></li>
+    <li><router-link to="/portfolio"><a href="#" class="menu--link">Portfolio</a></router-link></li>
+    <li><router-link to="/"><a href="#" class="menu--link">Blog</a></router-link></li> 
+    <li><a href="./docs/peter-wilmshurst.pdf" target="_blank" title="Peter Wilmshurst CV" class="menu--link">CV</a></li>
+  </ul>
 
       </div>
     </header> 
@@ -172,36 +171,9 @@ $grey: #38344d;
 }
 
 #app {
-	// hide light mode switch by default
-	.light-mode {
-		display: none;
-		visibility: hidden;
-	}
-
-	// colour theme switch
-	.dark-mode {
-		.cls-1 {
-			fill: $black;
-		}
-	}
-	.light-mode {
-		.cls-1 {
-			fill: $white;
-		}
-	}
 
 	// dark mode
 	&.dark {
-		.dark-mode {
-			display: none;
-			visibility: hidden;
-		}
-
-		.light-mode {
-			display: block;
-			visibility: visible;
-		}
-
 		background-color: $black;
 		color: $white;
 
@@ -222,110 +194,13 @@ $grey: #38344d;
 				color: $white;
 			}
 		}
+
+    .theme {
+  border: $white solid 1px;
+	background: $white;
+  color: $black;
+    }
 	}
-}
-
-.main-menu {
-	padding: 0;
-	margin: 0;
-}
-
-// Hamburger Menu
-#hamburger {
-	display: block;
-	visibility: visible;
-
-	@media only screen and (min-width: 768px) {
-		display: none;
-		visibility: hidden;
-	}
-}
-
-nav {
-	align-items: center;
-
-	ul {
-		display: none;
-		visibility: hidden;
-
-		@media only screen and (min-width: 768px) {
-			display: block;
-			visibility: visible;
-		}
-
-		&.opened {
-			display: block;
-			visibility: visible;
-			position: fixed;
-			z-index: 1;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 100vh;
-			background-color: transparentize($color: $green, $amount: 0.1);
-
-			li {
-				display: flex;
-				align-items: center;
-				text-align: center;
-				height: 20%;
-				width: 100%;
-
-				a {
-					width: 100%;
-					align-items: center;
-					color: $white;
-
-					&.router-link-exact-active {
-						border: none;
-					}
-
-					&:hover {
-						border-bottom: none;
-					}
-				}
-
-				&:hover {
-					background-color: $white;
-
-					a {
-						color: $green;
-					}
-				}
-			}
-		}
-	}
-}
-
-.nav-icon {
-	cursor: pointer;
-	display: block;
-	float: right;
-	width: 1.25rem;
-	transition: all 0.2s ease-in-out;
-	position: relative;
-	z-index: 10;
-
-	&:after,
-	&:before,
-	span {
-		display: block;
-		transition: all 0.2s ease-in-out;
-		content: "";
-		margin: 3px 0;
-		height: 3px;
-		background-color: $green;
-	}
-
-	// &:hover:before {
-	//   transform: translateY(12px) rotate(135deg);
-	// }
-	// &:hover:after {
-	//   transform: translateY(-12px) rotate(-135deg);
-	// }
-	// &:hover span {
-	// transform: scale(0);
-	// }
 }
 
 header {
@@ -365,51 +240,84 @@ header {
 	}
 }
 
-#logo,
-nav {
+#logo {
 	flex: 1;
 }
 
-nav ul {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.ham {
+	z-index: 100;
+	width: 3rem;
+	height: 3rem;
+	border: $green solid 1px;
+	background: $green;
+	color: $white;
+	cursor: pointer;
 }
 
-nav li {
-	list-style: none;
+.xIcon {
+	display: none;
+}
 
-	a {
-		text-transform: uppercase;
-		font-weight: 600;
+.theme {
+	z-index: 100;
+	width: 3rem;
+	height: 3rem;
+  margin-right: 1rem;
+	border: $black solid 1px;
+	background: $black;
+	color: $white;
+	cursor: pointer;
+}
+
+.lightIcon {
+display: none;
+}
+
+
+li {
+	padding: 1rem 0;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	background-image: url("./assets/logo-bg.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: transparentize($black, 0.01);
+	color: $white;
+	transform: translateX(-100%);
+	transition: transform 0.2s;
+	list-style: none;
+	padding: 4rem;
+
+	&--link {
+		display: inline;
+		font-size: 3rem;
+		color: white;
 		text-decoration: none;
 
 		&:hover {
-			border-bottom: 3px solid $green;
-		}
-
-		&.router-link-exact-active {
-			border-bottom: 3px solid $green;
-		}
-
-		&.external-link {
-			background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -256 1850 1850'%3E%3Cpath fill='currentColor' d='M1438.373 818.95v320q0 119-84.5 203.5t-203.5 84.5h-832q-119 0-203.5-84.5t-84.5-203.5v-832q0-119 84.5-203.5t203.5-84.5h704q14 0 23 9t9 23v64q0 14-9 23t-23 9h-704q-66 0-113 47t-47 113v832q0 66 47 113t113 47h832q66 0 113-47t47-113v-320q0-14 9-23t23-9h64q14 0 23 9t9 23zm384-864v512q0 26-19 45t-45 19q-26 0-45-19l-176-176-652 652q-10 10-23 10t-23-10l-114-114q-10-10-10-23t10-23l652-652-176-176q-19-19-19-45t19-45q19-19 45-19h512q26 0 45 19t19 45z'/%3E%3C/svg%3E%0A");
-			background-repeat: no-repeat;
-			background-position: right;
-			padding-right: 2rem;
+			text-decoration: underline;
+      color: $green;
 		}
 	}
 
-	&.colour-theme {
-		a {
-			border-bottom: none;
-		}
-		svg {
-			width: 2.25rem;
-			&:hover {
-				cursor: pointer;
-			}
-		}
-	}
+  .router-link-exact-active {
+
+    a {
+    color: $green;}
+  }
 }
+
+.showMenu {
+	transform: translateX(0);
+}
+
 </style>

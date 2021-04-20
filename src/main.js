@@ -10,12 +10,24 @@ new Vue({
 }).$mount('#app')
 
 // dark mode
-let toggler = document.querySelector(".colour-theme");
-let fullscreen = document.querySelector("#app");
+var toggler = document.querySelector(".theme");
+var fullscreen = document.querySelector("#app");
+var lightMode = document.querySelector(".lightIcon")
+var darkMode = document.querySelector(".darkIcon")
 
-toggler.addEventListener('click', () => {
-    fullscreen.classList.toggle("dark");
-})
+toggler.addEventListener("click", toggleTheme)
+
+function toggleTheme() {
+  if (fullscreen.classList.contains("dark")) {
+    fullscreen.classList.remove("dark");
+    darkMode.style.display = "block";
+    lightMode.style.display = "none";
+  } else {
+    fullscreen.classList.add("dark");
+    darkMode.style.display = "none";
+    lightMode.style.display =  "block";
+  }
+}
 
 // Header Scroll
 var header = document.querySelector("header");
@@ -29,24 +41,30 @@ window.addEventListener("scroll", function () {
     }
 });
 
-// Mobile Navigation
-const hamburger = document.querySelector("#hamburger");
-const menu = document.querySelector("#menu");
+// Mobile Menu
+var menu = document.querySelector(".menu")
+var ham = document.querySelector(".ham")
+var xIcon = document.querySelector(".xIcon")
+var menuIcon = document.querySelector(".menuIcon")
 
-menu.addEventListener("click", () => {
-    menu.classList.remove("opened");
-    // menu.style.top = header.clientHeight + "px";
-});
+ham.addEventListener("click", toggleMenu)
 
-hamburger.addEventListener("click", (e) => {
+function toggleMenu() {
+  if (menu.classList.contains("showMenu")) {
+    menu.classList.remove("showMenu");
+    xIcon.style.display = "none";
+    menuIcon.style.display = "block";
+  } else {
+    menu.classList.add("showMenu");
+    xIcon.style.display = "block";
+    menuIcon.style.display = "none";
+  }
+}
 
-    e.preventDefault();
+var menuLinks = document.querySelectorAll(".menu--link")
 
-    if (menu.classList.contains("opened")) {
-        menu.classList.remove("opened");
-
-    } else {
-
-        menu.classList.add("opened");
-    }
-});
+menuLinks.forEach(
+  function (menuLink) {
+    menuLink.addEventListener("click", toggleMenu)
+  }
+)
