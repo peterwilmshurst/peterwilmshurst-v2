@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import About from './views/About.vue'
 import Portfolio from './views/Portfolio.vue'
+import Life from './views/Life.vue'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/portfolio',
       name: 'portfolio',
       component: Portfolio
+    },
+    {
+      path: '/life',
+      name: 'life',
+      component: Life
     },
     ...blogRoutes
   ]

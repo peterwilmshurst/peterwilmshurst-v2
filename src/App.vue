@@ -33,6 +33,7 @@
     <li><router-link to="/about"><a href="#" class="menu--link">About</a></router-link></li>
     <li><router-link to="/portfolio"><a href="#" class="menu--link">Portfolio</a></router-link></li>
     <li><router-link to="/"><a href="#" class="menu--link">Blog</a></router-link></li> 
+ 	<li><router-link to="/life"><a href="#" class="menu--link">Life</a></router-link></li> 
     <li><a href="./docs/peter-wilmshurst.pdf" target="_blank" title="Peter Wilmshurst CV" class="menu--link">CV</a></li>
   </ul>
 
