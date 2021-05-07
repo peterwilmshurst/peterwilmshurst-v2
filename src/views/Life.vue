@@ -2,7 +2,7 @@
 <div class="life wrap">
 
  <insta-feed
- :token="instagramToken"
+ token="IGQVJYb29IWlN3eXh1alpQUjByNVFzUVcxUi1HR1o3V1lyZAUJ0Vmk2ZAF8zMnJuZAWhQdFBNZAjI5YlFGZA0NDR3RPMER2R3czQ3lJWVY1VU1lNTRmYmlrWkZAJWmVJMXZAUM1I5S3RyX3FNa0hCdFh5NHRVbgZDZD"
  fields="media_url,media_type,caption,permalink"
  container-class="instagram-container"
  :count="24"
@@ -43,11 +43,11 @@ export default {
   components: {
     instaFeed
   },
-    data() { 
-    return { 
-        instagramToken: process.env.VUE_APP_INSTAGRAM_TOKEN
-    }
-  }
+  //   data() { 
+  //   return { 
+  //       instagramToken: process.env.VUE_APP_INSTAGRAM_TOKEN
+  //   }
+  // }
 }
 </script>
 
