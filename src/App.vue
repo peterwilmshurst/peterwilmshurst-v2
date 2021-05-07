@@ -42,17 +42,17 @@
 
     <div class="spotify">
       <div class="spotify--album-cover">
-        <a href="https://open.spotify.com/album/1Mhn9VosyjtWn4dMPFlna6?si=ityhx10wT6CaD_KEOnBL-g" target="_blank" alt="Whats on the jukebox: Billy Joel: The Stranger">
-          <img src="./assets/billy-joel-the-stranger.png" alt="Whats on the jukebox: Billy Joel: The Stranger" />
+        <a href="https://open.spotify.com/album/748dZDqSZy6aPXKcI9H80u?si=VMh-P2-zTo24COAk5ZHxBQ" target="_blank" alt="Whats on the jukebox: Kendrick Lamar: Good Kid, M.A.A.d City">
+          <img src="./assets/kendrick-lamar-good-kid-maad-city.png" alt="Whats on the jukebox: Kendrick Lamar: Good Kid, M.A.A.d City" />
         </a>
       </div>
       
       <div class="spotify--album-details">
-        <a href="https://open.spotify.com/album/1Mhn9VosyjtWn4dMPFlna6?si=ityhx10wT6CaD_KEOnBL-g" target="_blank" alt="Billy Joel: The Stranger">
-          <h4>The Stranger</h4>
+        <a href="https://open.spotify.com/album/748dZDqSZy6aPXKcI9H80u?si=VMh-P2-zTo24COAk5ZHxBQ" target="_blank" alt="Kendrick Lamar: Good Kid, M.A.A.d City">
+          <h4>good kid, m.A.A.d city</h4>
         </a>
-        <a href="https://open.spotify.com/artist/6zFYqv1mOsgBRQbae3JJ9e?si=ZDaOVbAiTXuSu4Diz4j6SA" target="_blank" alt="Billy Joel">
-          <h5>Billy Joel</h5>
+        <a href="https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg?si=91tQcD2rQh-wFeUyCVZqWA" target="_blank" alt="Kendrick Lamar">
+          <h5>Kendrick Lamar</h5>
         </a>
       </div>   
     </div>
@@ -67,6 +67,10 @@ html, body {
   margin: 0px;
   padding: 0px;
   height: 100%;
+  font-family: brandon-grotesque, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0625rem;
 }
 a {
   color:#39b54a;
@@ -74,6 +78,9 @@ a {
 </style>
 
 <style lang="scss" scoped>
+
+@import url('https://use.typekit.net/ofx6cpe.css');
+
 // variables
 $white: #ffffff;
 $black: #2a263d;
@@ -81,7 +88,9 @@ $green: #39b54a;
 $grey: #38344d;
 
 #app {
-	font-family: "Avenir", Helvetica, Arial, sans-serif;
+	font-family: brandon-grotesque, sans-serif;
+	font-style: normal;
+	font-weight: 400;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	color: $grey;
@@ -113,6 +122,7 @@ $grey: #38344d;
 
 // Whats on the jukebox?
 .spotify {
+	font-size: 1rem;
 	background-image: url("./assets/icon_spotify.png");
 	background-size: contain;
 	background-position: center right;
@@ -122,8 +132,8 @@ $grey: #38344d;
 	justify-content: flex-end;
 	position: fixed;
 	bottom: 50px;
-	left: -270px;
-	width: 250px;
+	left: -325px;
+	width: 305px;
 	height: 50px;
 	background-color: $green;
 	padding: 1rem 80px 1rem 1rem;
@@ -133,7 +143,7 @@ $grey: #38344d;
 	z-index: 100;
 
 	&:hover {
-		transform: translateX(180px);
+		transform: translateX(235px);
 		cursor: pointer;
 	}
 

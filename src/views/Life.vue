@@ -1,9 +1,12 @@
 <template>
+<div class="life wrap">
+
  <insta-feed
  :token="instagramToken"
  fields="media_url,media_type,caption,permalink"
- container-class="image-container"
- :mediatypes="['IMAGE']">
+ container-class="instagram-container"
+ :count="24"
+ :mediatypes="['IMAGE','VIDEO','CAROUSEL_ALBUM']">
 
   <template v-slot:loading="props">
     <h1 v-if="props.loading" class="fancy-loading">
@@ -12,12 +15,13 @@
   </template>
 
   <template v-slot:feeds="props">
-    <a :href="props.feed.permalink" rel="noopener" target="_blank">
       <div class="instagram-image">
+         <a :href="props.feed.permalink" rel="noopener" target="_blank">
         <img :src="props.feed.media_url" alt="Instagram post">
-        <div :text="props.feed.caption" />
+         </a>
+        <p class="caption">{{props.feed.caption}}</p>
       </div>
-    </a>
+   
   </template>
 
   <template v-slot:error="props">
@@ -27,6 +31,8 @@
   </template>
   
 </insta-feed>
+
+</div>
 </template>
 
 <script>
@@ -44,3 +50,38 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+
+.instagram-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+.instagram-image {
+    margin: 1rem 0;
+    flex-grow: 1;
+    width: 100%;
+
+    @media only screen and (min-width: 768px) {
+    margin: 1rem;
+    width: 33%;
+    }
+
+    img {
+    width:100%;
+    height: auto;
+    }
+  } 
+
+  .caption {
+font-size: 1rem;
+font-style: italic;
+font-weight: 100;
+padding: 0;
+margin: 0;
+  }
+}
+
+</style>

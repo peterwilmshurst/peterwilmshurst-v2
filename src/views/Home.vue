@@ -47,7 +47,7 @@ h2 {
     color: $grey;
     font-size: 1rem;
     float: right;
-    font-weight: normal;
+    font-weight: 500;
   }
 }
   .dark {

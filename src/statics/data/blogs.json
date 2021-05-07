@@ -1,76 +1,82 @@
 {
   "blog": [
     {
+      "id": "embed-your-instagram-feed",
+      "date": "May 05, 2021",
+      "title": "Embed your instagram feed",
+      "description": "Those of you who know me or have taken a look through my socials will quickly realise that I tend to keep myself to myself and therefore there isn't a great deal to see! However the importance of social media and its ability to reach a large audience is unquestionable ..."
+    },
+    {
       "id": "wilma-v2",
       "date": "April 01, 2021",
       "title": "Check out the Vue",
-      "description": "I've given my website a bit of a revamp. Not only have I finally added some content (more to come!) I've rebuilt it from the ground up using Vue, added a dark mode and markdown blog posts."
+      "description": "I've given my website a bit of a revamp. Not only have I finally added some content (more to come!) I've rebuilt it from the ground up using Vue, added a dark mode and markdown blog posts ..."
     },
     {
       "id": "little-seeds",
       "date": "September 06, 2020",
       "title": "Little Seeds",
-      "description": "Developed a Shopify Store for another good friend of mine Julie White. Little Seeds grew from a passion to create stylish but also gender neutral baby products."
+      "description": "Developed a Shopify Store for another good friend of mine Julie White. Little Seeds grew from a passion to create stylish but also gender neutral baby products ..."
     },
     {
       "id": "init-v3.2",
       "date": "August 17, 2020",
       "title": "Init v3.2",
-      "description": "A new project init. A much improved version of my previous attempt."
+      "description": "A new project init. A much improved version of my previous attempt ..."
     },
     {
       "id": "rafael-tome",
       "date": "July 21, 2020",
       "title": "Rafael Tome",
-      "description": "Developed another website for a colleague of mine - Rafael Tome. I've worked with Rafa for the past 4 years, during that time we have created many beautiful things together."
+      "description": "Developed another website for a colleague of mine - Rafael Tome. I've worked with Rafa for the past 4 years, during that time we have created many beautiful things together ..."
     },
     {
       "id": "core-principles-for-theming-in-magento-2",
       "date": "June 09, 2020",
       "title": "Core Principles for theming in Magento 2",
-      "description": "Completed the Core Principles for Theming in Magento 2 course."
+      "description": "Completed the Core Principles for Theming in Magento 2 course ..."
     },
     {
       "id": "new-laptop",
       "date": "June 02, 2020",
       "title": "New Laptop",
-      "description": "Set myself up a new development machine, yup! Gave me an opportunity to look deeper into a few of my peers' setups, dotfiles and so forth. I decided on using the git bare repository method, thanks for the advice DistroTube."
+      "description": "Set myself up a new development machine, yup! Gave me an opportunity to look deeper into a few of my peers' setups, dotfiles and so forth. I decided on using the git bare repository method, thanks for the advice DistroTube ..."
     },
     {
       "id": "oxted-classic-cars",
       "date": "May 15, 2020",
       "title": "Oxted Classic Cars",
-      "description": "Beautiful cars, great family. If you've got a special occasion coming up - or just fancy a few hours in a classic - get in touch! You won't regret it."
+      "description": "Beautiful cars, great family. If you've got a special occasion coming up - or just fancy a few hours in a classic - get in touch! You won't regret it ..."
     },
     {
       "id": "magento-2",
       "date": "February 11, 2020",
       "title": "Magento 2",
-      "description": "For the last month I have immersed myself in Magento development. Installing an open source development environment as well as installing and syncing a cloud version on my PC and Mac."
+      "description": "For the last month I have immersed myself in Magento development. Installing an open source development environment as well as installing and syncing a cloud version on my PC and Mac ..."
     },
     {
       "id": "netlify",
       "date": "January 14, 2020",
       "title": "Netlify",
-      "description": "I feel like I am a little late to the party. I have discovered Netlify and am now hosting my website here."
+      "description": "I feel like I am a little late to the party. I have discovered Netlify and am now hosting my website here ..."
     },
     {
       "id": "project-init",
       "date": "January 13, 2020",
       "title": "Project Init",
-      "description": "A handy gulp project starter template."
+      "description": "A handy gulp project starter template ..."
     },
     {
       "id": "node-version-manager",
       "date": "January 03, 2020",
       "title": "Node Version Manager",
-      "description": "NVM is a local development game changer."
+      "description": "NVM is a local development game changer ..."
     },
     {
       "id": "the-ramblings-of-a-mad-man",
       "date": "December 30, 2019",
       "title": "The Ramblings of a Mad Man",
-      "description": "A little place on the web to share my thoughts, life and work."
+      "description": "A little place on the web to share my thoughts, life and work ..."
     }
   ]
 }
